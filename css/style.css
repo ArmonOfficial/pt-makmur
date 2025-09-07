@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -122,14 +121,6 @@ footer {
   margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
-  .jobs .job-grid {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-
 .cta-button {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -145,11 +136,68 @@ footer {
   background-color: #ffd54f;
   color: #000;
 }
-
 .cta-button.whatsapp {
   background-color: #25D366;
   color: #fff;
 }
 .cta-button.whatsapp:hover {
   background-color: #1ebe5d;
+}
+
+/* MOBILE FRIENDLY SECTION */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 229, 138, 0.1);
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
